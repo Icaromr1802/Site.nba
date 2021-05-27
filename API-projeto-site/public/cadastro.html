@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css" />
+    <link rel="icon" href="logoNba.png">
+    <title>Cadastro</title>
+</head>
+<body>
+    <body class="img_fundo"> 
+        <div class="header">
+          <div class="caixa">
+            <span><a href="home.html"><img style="height: 60px;" src="nba.logo.png" alt="Logo Champions"></a></span>
+            <nav>
+              <ul>
+                <li class="list_not"><a href="index.html">Home</a></li>
+                <li class="list_not"><a href="jogos.html">Jogos e Resultados</a></li>
+                <li class="list_not"><a href="tabela.html">Classificação</a></li>
+                <li class="list_not" style="color: #eb0d0d;"><a href="login.html">Seus Interesses</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <Br><Br><br><br><br><br><br>
+          <div class="pag_cadastro">
+  <div class="cadastro">
+    <div class="box_cadastro">   
+      <h2>Faça seu cadastro aqui!</h2>
+                <div class="box_input">
+        <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+          <div class="input_esq">
+          Nome completo
+            <input type="text" name="nome_completo" class="input-padrao" autofocus="autofocus" placeholder="Nome e sobrenome" required minlength="4"><br>
+           
+            <span>Time Favorito:
+              <select id="time" name="fk_times" required>
+                <option  disabled selected ></option>
+                <option value="01">76ers</option>
+                <option value="02">Bucks</option>
+                <option value="03">Bulls</option>
+                <option value="04">Cavaliers</option>
+                <option value="05">Celtics</option>
+                <option value="06">Clippers</option>
+                <option value="07">Grizzlies</option>
+                <option value="08">Hawks</option>
+                <option value="09">Heat</option>
+                <option value="10">Hornets</option>
+                <option value="11">Jazz</option>
+                <option value="12">Kings</option>
+                <option value="13">Knicks</option>
+                <option value="14">Lakers</option>
+                <option value="15">Magic</option>
+                <option value="16">Mavericks</option>
+                <option value="17">Nets</option>
+                <option value="18">Nuggets</option>
+                <option value="19">Pacers</option>
+                <option value="20">Pelicans</option>
+                <option value="21">Pistons</option>
+                <option value="22">Raptors</option>
+                <option value="23">Rockets</option>
+                <option value="24">Spurs</option>
+                <option value="25">Suns</option>
+                <option value="26">Thunder</option>
+                <option value="27">Timberwolves</option>
+                <option value="28">Trail Blazzers</option>
+                <option value="29">warriors</option>
+                <option value="30">Wizards</option>
+              </select></span><br>
+
+
+              <span>Jogador Favorito:<select id="time" name="fk_jogador" required>
+                <option  disabled selected ></option>
+                <option value="101">Lebron</option>
+                <option value="102">Bird</option>
+                <option value="103">Lillard</option>
+                <option value="104">Duncan</option>
+                <option value="105">Curry</option>
+                <option value="106">Vince Carter</option>
+                <option value="107">Harden</option>
+                <option value="108">Paul Pierce</option>
+                <option value="109">Leonard</option>
+                <option value="110">Magic Johsnon</option>
+                <option value="111">Antetokoumpo</option>
+                <option value="112">Michael Jordan</option>
+                <option value="113">Durant</option>
+                <option value="114">O Neal</option>
+                <option value="115">Embiid</option>
+                <option value="116">Nowitzki</option>
+                <option value="117">Irving</option>
+                <option value="118">Karl Malone</option>
+                <option value="119">Carmelo Anthony</option>
+                <option value="120">Barkley</option><br>
+                  
+                <div class="input_dir">
+           
+            Login:<br>
+            <input type="text" name="login" class="input-padrao" placeholder="seu nome de usuário" required minlength="4"><br>
+
+            E-mail:<br>
+            <input type="text" name="email" class="input-padrao" placeholder="seu E-mail" required minlength="4">
+            
+            Senha:<br>
+            <input type="password" name="senha" class="input-padrao" placeholder="*****" required minlength="4">
+            
+            <input type="submit" id="btn_entrar" value="Cadastrar" class="btn_cadastro">
+        </form>
+        
+      </div>
+    </div>
+    
+
+        <img src="aguarde-orange.gif" id="img_aguarde" style="display: none; width:100px">
+
+            <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
+            Erro no cadastro
+            </div>
+    </div>
+    </div>
+   </div>
+   </div>
+    
+</body>
+</html>
+
+<script>
+function cadastrar() {
+
+var formulario = new URLSearchParams(new FormData(form_cadastro));
+fetch("/usuarios/cadastrar", {
+    method: "POST",
+    body: formulario
+}).then(function (response) {
+
+    if (response.ok) {
+
+        window.location.href = 'login.html';
+
+    } else {
+
+        console.log('Erro de cadastro!');
+        response.text().then(function (resposta) {
+            div_erro.innerHTML = resposta;
+        });
+    }
+});
+
+return false;
+}
+
+
+
+
+
+</script>

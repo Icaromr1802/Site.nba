@@ -1,0 +1,62 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+  }
+
+    .header {padding-top: 9px;
+      background: hsl(20, 14%, 4%,0.8);
+      width: 100%;
+      height: 73px;
+      border-bottom: 5px solid  #081dda;
+      position: fixed;
+      padding-bottom: -5px;
+      
+  }
+  .fundo {
+    padding-top: 0px;
+    background: #353434;
+    width: 100%;
+    height: 100px;
+  }
+
+  .caixa {
+    max-width: 94%;
+    height: 100%;
+    margin: 1px auto; 
+  }
+  
+  .header span {
+    margin-top: 2px;
+    float: left;
+  }
+  
+  .header nav {
+    margin-top: 3px;
+    float: right;
+  }
+  
+  ul {
+    margin-bottom: 5px;
+    list-style: none;
+  }
+  
+  .list_not {
+    font-style: inherit;
+    display: inline;
+    margin-left: 22px;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    color: white;
+  }
+  
+  .list_not:hover {
+  color: #cb1111;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }

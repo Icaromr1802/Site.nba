@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="times.css" />
+    <link rel="icon" href="logoNba.png">
+    <title>NBA</title>
+  </head>
+
+  <body class="img_fundo"> 
+    <div class="header">
+      <div class="caixa">
+        <span><a href="home.html"><img style="height: 60px;" src="nba.logo.png" alt="Logo NBA"></a></span>
+        <nav>
+          <ul>
+            <li class="list_not"><a href="index.html">Home</a></li>
+            <li class="list_not"><a href="jogos.html">Jogos e Resultados</a></li>
+            <li class="list_not"><a href="Tabela.html">Classificação</a></li>
+            <li class="list_not" style="color: #eb0d0d;"><a href="times.html">Seus Interesses</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="pag_login">
+      <div class="div_fundo">
+          <!-- colocar a parte do Login aqui para deixar centralizado -->
+          <div class="caixa_fundo">
+              <div class="caixa">
+                  <h2>ENTRAR</h2>
+                  <form id="form_login" method="post" onsubmit="return entrar()" class="formulario">
+                  <input type="text" id="inp_user" name="login" placeholder="Usuario"><br>
+                  <input type="password" id="inp_password" name="senha" placeholder="Senha">
+                  <br>
+                  <div id="aviso" class="div_aviso">
+                      <!-- onde irá aparecer o aviso de (senha ou login errado) -->
+                      <span id="msg_aviso" class="txt_aviso"></span><br>
+                  </div>
+                  <button id="btn_entrar">Avançar</button>
+                  <br><br>
+                </form>
+                <div class="extra">
+                    <div id="div_erro" class="msg_erro">
+                    </div></div>
+                  <div class="cadastre">Não tem uma conta? <a href="cadastro.html"><u>Cadastre-se!</u></a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <footer class="rodape">
+      <div class="box_rodape">
+          <img class="logo_bandtec" src="bandtec.png" alt="logo da bandtec">
+          <div class="copyright">
+              <span>Termo Sense - Copyright © 2021</span>
+          </div>
+          <img class="logo_termosense" src="TermoSenseLogo.png" alt="logo Termo Sense">
+      </div>
+  </footer>
+</body>
+
+</html>
+
+<script>
+  function entrar() {
+      aguardar();
+      var formulario = new URLSearchParams(new FormData(form_login));
+      fetch("/usuarios/autenticar", {
+          method: "POST",
+          body: formulario
+      }).then(resposta => {
+
+          if (resposta.ok) {
+
+              resposta.json().then(json => {
+
+                  sessionStorage.email_usuario_meuapp = json.email;
+                  sessionStorage.nome_usuario_meuapp = json.nome;
+
+                  window.location.href = 'index.html';
+              });
+
+          } else {
+
+              console.log('Erro de login!');
+
+              resposta.text().then(texto => {
+                  console.error(texto);
+                  finalizar_aguardar(texto);
+              });
+          }
+      });
+
+      return false;
+  }
+
+  function aguardar() {
+      btn_entrar.disabled = true;
+      // img_aguarde.style.visibility = 'visible';
+      div_erro.style.visibility = 'hidden';
+  }
+
+  function finalizar_aguardar(resposta) {
+      btn_entrar.disabled = false;
+      // img_aguarde.style.visibility = 'hidden';
+      div_erro.style.visibility = 'visible';
+      div_erro.innerHTML = resposta;
+  }
+</script>

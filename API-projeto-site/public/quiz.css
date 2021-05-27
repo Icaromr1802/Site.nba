@@ -1,0 +1,289 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    }
+
+    .header {
+        padding-top: 9px;
+      background: hsl(20, 14%, 4%,0.8);
+      width: 100%;
+      height: 73px;
+      border-bottom: 5px solid  #081dda;
+      position: fixed;
+      padding-bottom: -5px;
+      
+  }
+  .fundo {
+    padding-top: 0px;
+    background: #353434;
+    width: 100%;
+    height: 100px;
+  }
+
+  .caixa {
+    max-width: 94%;
+    height: 100%;
+    margin: 1px auto; 
+  }
+  
+  .header span {
+    margin-top: 2px;
+    float: left;
+  }
+  
+  .header nav {
+    margin-top: 3px;
+    float: right;
+  }
+  
+  ul {
+    margin-bottom: 5px;
+    list-style: none;
+  }
+  
+  .list_not {
+    font-style: inherit;
+    display: inline;
+    margin-left: 22px;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    color: white;
+  }
+  
+  .list_not:hover {
+  color: #cb1111;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  
+
+  .container{
+      text-align: center;
+      max-width: 75%;
+      padding-top: 7%;
+      padding-bottom: 10%;
+      margin-left: 20%;
+
+  }
+  
+  .home{
+    width: 100%; 
+    height: 350px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 10%;
+    
+  }
+  
+  .titulo_quiz{
+    font-style: inherit;
+    width: 304px;
+    height: 20px;
+    margin-left: 556px;
+    margin-top: 62px;
+
+  }
+  .pergunta1{
+    margin-top: 20px;
+    
+  }
+
+ 
+  #pergunta1 button{
+    background-color: rgb(27, 27, 228);
+    color: white;
+    border-radius: 10%;
+    border: solid rgb(2, 2, 2) 5px;
+    width: 100px;
+    float: left;
+    margin-left: 193px;
+    
+      }
+      #resposta1 button{
+        background-color: blue;
+        color: white;
+        border-radius: 10%;
+        border: solid rgb(196, 28, 28) 5px;
+        width: 100px;
+        float: left;
+        margin-left: 193px;
+    }
+
+    #pergunta2 button{
+      background-color: rgb(27, 27, 228);
+      color: white;
+      border-radius: 10%;
+      border: solid rgb(2, 2, 2) 5px;
+      width: 100px;
+      float: left;
+      margin-left: 193px;
+        }
+
+      #resposta2 button{
+        background-color: blue;
+        color: white;
+        border-radius: 10%;
+        border: solid rgb(196, 28, 28) 5px;
+        width: 100px;
+        float: left;
+        margin-left: 193px;
+      }
+      #pergunta3 button{
+        background-color: rgb(27, 27, 228);
+        color: white;
+        border-radius: 10%;
+        border: solid rgb(2, 2, 2) 5px;
+        width: 100px;
+        float: left;
+        margin-left: 193px;
+          }
+  
+        #resposta3 button{
+          background-color: blue;
+          color: white;
+          border-radius: 10%;
+          border: solid rgb(196, 28, 28) 5px;
+          width: 100px;
+          float: left;
+          margin-left: 193px;
+        }
+        
+        #pergunta4 button{
+          background-color: rgb(27, 27, 228);
+          color: white;
+          border-radius: 10%;
+          border: solid rgb(2, 2, 2) 5px;
+          width: 100px;
+          float: left;
+          margin-left: 193px;
+            }
+    
+          #resposta4 button{
+            background-color: blue;
+            color: white;
+            border-radius: 10%;
+            border: solid rgb(196, 28, 28) 5px;
+            width: 100px;
+            float: left;
+            margin-left: 193px;
+          }
+          #pergunta5 button{
+            background-color: rgb(27, 27, 228);
+            color: white;
+            border-radius: 10%;
+            border: solid rgb(2, 2, 2) 5px;
+            width: 100px;
+            float: left;
+            margin-left: 193px;
+              }
+      
+            #resposta5 button{
+              background-color: blue;
+              color: white;
+              border-radius: 10%;
+              border: solid rgb(196, 28, 28) 5px;
+              width: 100px;
+              float: left;
+              margin-left: 193px;
+            }
+            #pergunta6 button{
+              background-color: rgb(27, 27, 228);
+              color: white;
+              border-radius: 10%;
+              border: solid rgb(2, 2, 2) 5px;
+              width: 100px;
+              float: left;
+              margin-left: 193px;
+                }
+        
+              #resposta6 button{
+                background-color: blue;
+                color: white;
+                border-radius: 10%;
+                border: solid rgb(196, 28, 28) 5px;
+                width: 100px;
+                float: left;
+                margin-left: 193px;
+              }
+              #pergunta7 button{
+                background-color: rgb(27, 27, 228);
+                color: white;
+                border-radius: 10%;
+                border: solid rgb(2, 2, 2) 5px;
+                width: 100px;
+                float: left;
+                margin-left: 193px;
+                  }
+          
+                #resposta7 button{
+                  background-color: blue;
+                  color: white;
+                  border-radius: 10%;
+                  border: solid rgb(196, 28, 28) 5px;
+                  width: 100px;
+                  float: left;
+                  margin-left: 193px;
+                }
+                #pergunta8 button{
+                  background-color: rgb(27, 27, 228);
+                  color: white;
+                  border-radius: 10%;
+                  border: solid rgb(2, 2, 2) 5px;
+                  width: 100px;
+                  float: left;
+                  margin-left: 193px;
+                    }
+            
+                  #resposta8 button{
+                    background-color: blue;
+                    color: white;
+                    border-radius: 10%;
+                    border: solid rgb(196, 28, 28) 5px;
+                    width: 100px;
+                    float: left;
+                    margin-left: 193px;
+                  }
+                  #pergunta9 button{
+                    background-color: rgb(27, 27, 228);
+                    color: white;
+                    border-radius: 10%;
+                    border: solid rgb(2, 2, 2) 5px;
+                    width: 100px;
+                    float: left;
+                    margin-left: 193px;
+                      }
+              
+                    #resposta9 button{
+                      background-color: blue;
+                      color: white;
+                      border-radius: 10%;
+                      border: solid rgb(196, 28, 28) 5px;
+                      width: 100px;
+                      float: left;
+                      margin-left: 193px;
+                    }
+                    #pergunta10 button{
+                      background-color: rgb(27, 27, 228);
+                      color: white;
+                      border-radius: 10%;
+                      border: solid rgb(2, 2, 2) 5px;
+                      width: 100px;
+                      float: left;
+                      margin-left: 193px;
+                        }
+                
+                      #resposta10 button{
+                        background-color: blue;
+                        color: white;
+                        border-radius: 10%;
+                        border: solid rgb(196, 28, 28) 5px;
+                        width: 100px;
+                        float: left;
+                        margin-left: 193px;
+                      }

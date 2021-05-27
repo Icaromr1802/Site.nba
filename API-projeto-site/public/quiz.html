@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="quiz.css" />
+    <link rel="icon" href="logoNba.png">
+    <title>NBA</title>
+  </head>
+  <body class="img_fundo"> 
+    <div class="header">
+      <div class="caixa">
+        <span><a href="quiz.html"><img style="height: 60px;" src="nba.logo.png" alt="Logo NBA"></a></span>
+        <nav>
+          <ul>
+            <li class="list_not" style="color: #eb0d0d;"><a href="index.html">Home</a></li>
+            <li class="list_not"><a href="jogos.html">Jogos e Resultados</a></li>
+            <li class="list_not"><a href="tabela.html">Classificação</a></li>
+            <li class="list_not"><a href="login.html">Seus Interesses</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+<br><br>
+<br>
+<br>
+
+<h3 class="titulo_quiz">Realize seu quiz sobre a NBA</h3><br><br>
+
+<center>
+  <b>Pergunta 1</b><br>
+<div class="pergunta1"><b>Qual foi o primeiro time que conquistou a NBA?</b><br><br>
+<div id="pergunta1">
+    <br><button onclick="acertou1()">Warriors</button>
+    <button onclick="errou1()">Lakers</button>
+    <button onclick="errou1()">Celtics</button>
+    <button onclick="errou1()">Heat</button><br><br>
+  </div>
+</div>
+<div id="resposta1" style="display: none;">
+  <button id="r1">Warriors</button>
+  <button id="e1" >Lakers</button>
+  <button id="e11">Celtics</button>
+  <button  id="e111">Heat</button><br><br>
+  <div id="msg1" style="display: none;"></div>
+</div><br><br><br>
+<b>Pergunta 2</b><br><br>
+<b>Qual time Michael Jordan é socio nos dias de hoje?</b><br><br><br>
+<div id="pergunta2">
+    <button onclick="errou2()">Bulls</button>
+    <button onclick="acertou2()">Hornets</button>
+    <button onclick="errou2()">Clippers</button>
+    <button onclick="errou2()">Magic</button><br><br>
+</div>
+<div id="resposta2" style="display: none;">
+  <button id="r2">Bulls</button>
+  <button id="e2" >Hornets</button>
+  <button id="e22">Clippers</button>
+  <button  id="e22">Magic</button><br><br>
+  <div id="msg2" style="display: none;"></div><br>
+</div><br><br><br>
+
+<b>Pergunta 3</b><br><br>
+<b>Qual time venceu seu primeiro titulo em 2019?</b><br><br><br>
+<div id="pergunta3">
+    <button onclick="errou3()">Thunder</button>
+    <button onclick="errou3()">Nets</button>
+    <button onclick="errou3()">Grizllers</button>
+    <button onclick="acertou3()">Raptors</button><br><br>
+</div>
+<div id="resposta3" style="display: none;">
+  <button id="r3">Thunder</button>
+  <button id="e3" >Nets</button>
+  <button id="e33">Grizllers</button>
+  <button  id="e333">Raptors</button><br><br>
+  <div id="msg3" style="display: none;"></div><br>
+</div><br><br><br>
+
+<b>Pergunta 4</b><br><br>
+<b>Qual time LeBron James começou carreira?</b><br><br><br>
+<div id="pergunta4">
+    <button onclick="errou4()">Lakers</button>
+    <button onclick="acertou4()">Cavs</button>
+    <button onclick="errou4()">Heat</button>
+    <button onclick="errou4()">Celtics</button><br><br>
+</div>
+<div id="resposta4" style="display: none;">
+  <button id="r4">Lakers</button>
+  <button id="e4" >Cavs</button>
+  <button id="e44">Heat</button>
+  <button  id="e444">Celtics</button><br><br>
+  <div id="msg4" style="display: none;"></div><br>
+</div><br><br><br>
+
+<b>Pergunta 5</b><br><br>
+<b>Tim Duncan foi astro de qual equipe?</b><br><br><br>
+<div id="pergunta5">
+    <button onclick="acertou5()">Spurs</button>
+    <button onclick="errou5()">Bucks</button>
+    <button onclick="errou5()">Kings</button>
+    <button onclick="errou5()">Suns</button><br><br>
+</div>
+<div id="resposta5" style="display: none;">
+  <button id="r5">Spurs</button>
+  <button id="e5" >Bucks</button>
+  <button id="e55">Kings</button>
+  <button  id="e555">Suns</button><br><br>
+  <div id="msg5" style="display: none;"></div><br>
+</div><br><br><br>
+
+<b>Pergunta 6</b><br><br>
+<b>Qual o atual lider da conferência Oeste?</b><br><br><br>
+<div id="pergunta6">
+    <button onclick="errou6()">Suns</button>
+    <button onclick="errou6()">Nuggets</button>
+    <button onclick="acertou6()">Jazz</button>
+    <button onclick="errou6()">Trail Blazers</button><br><br>
+</div>
+<div id="resposta6" style="display: none;">
+  <button id="r6">Suns</button>
+  <button id="e6" >Nuggets</button>
+  <button id="e66">Jazz</button>
+  <button  id="e666">Trail Blazers</button><br><br>
+  <div id="msg6" style="display: none;"></div><br>
+</div><br><br><br>
+
+<b>Pergunta 7</b><br><br>
+<b>Qual time draftou Shaquille O'Neal?</b><br><br><br>
+<div id="pergunta7">
+    <button onclick="errou7()">Heat</button>
+    <button onclick="acertou7()">Magic</button>
+    <button onclick="errou7()">Lakers</button>
+    <button onclick="errou7()">Mavericks</button><br><br>
+</div>
+<div id="resposta7" style="display: none;">
+  <button id="r7">Heat</button>
+  <button id="e7" >Magic</button>
+  <button id="e77">Lakers</button>
+  <button  id="e777">Mavericks</button><br><br>
+  <div id="msg7" style="display: none;"></div><br>
+</div><br><br><br>
+<b>Pergunta 8</b><br><br>
+<b>Zion foi draftado por qual time em 2019/2020?</b><br><br><br>
+<div id="pergunta8">
+    <button onclick="acertou8()">Pelicans</button>
+    <button onclick="errou8()">Kings</button>
+    <button onclick="errou8()">Timberwolves</button>
+    <button onclick="errou8()">Wizards</button><br><br>
+</div>
+<div id="resposta8" style="display: none;">
+  <button id="r8">Pelicans</button>
+  <button id="e8" >Kings</button>
+  <button id="e88">Timberwolves</button>
+  <button  id="e888">Wizards</button><br><br>
+  <div id="msg8" style="display: none;"></div><br>
+</div><br><br><br>
+<b>Pergunta 9</b><br><br>
+<b>Quem foi o Mvp da ultima temporada?</b><br><br><br>
+<div id="pergunta9">
+    <button onclick="errou9()">Harden</button>
+    <button onclick="errou9()">Curry</button>
+    <button onclick="acertou9()">Antetokounmpo</button>
+    <button onclick="errou9()">James</button><br><br>
+</div>
+<div id="resposta9" style="display: none;">
+  <button id="r9">Harden</button>
+  <button id="e9" >Curry</button>
+  <button id="e99">Antetokounmpo</button>
+  <button  id="e999">James</button><br><br>
+  <div id="msg9" style="display: none;"></div><br>
+</div><br><br><br>
+<b>Pergunta 9</b><br><br>
+<b>Quem é o maior idolo do gigante Boston Celtics?</b><br><br><br>
+<div id="pergunta10">
+    <button onclick="errou10()">Pierce</button>
+    <button onclick="errou10()">Jordan</button>
+    <button onclick="acertou10()">Bird</button>
+    <button onclick="errou10()">Garnett</button><br><br>
+</div>
+<div id="resposta10" style="display: none;">
+  <button id="r10">Pierce</button>
+  <button id="e10" >Jordan</button>
+  <button id="e100">Bird</button>
+  <button  id="e1000">Garnett</button><br><br>
+  <div id="msg10" style="display: none;"></div><br>
+</div><br><br><br>
+
+
+</center>
+
+
+<center>
+<h2></h2><div id="total"></div></h2>
+</center>
+
+<script>
+    contador = Number(0)
+    function acertou1() {
+        contador++
+        msg1.innerHTML = 'você acertou'
+        pergunta1.style.display = 'none'
+        resposta1.style.display = 'block'
+        msg1.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        r1.style.backgroundColor = 'green'
+    }
+    function errou1() {
+        msg1.innerHTML = 'você errou'
+        pergunta1.style.display = 'none'
+        resposta1.style.display = 'block'
+        msg1.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e1.style.backgroundColor = 'red'
+        e11.style.backgroundColor = 'red'
+        e111.style.backgroundColor = 'red'
+    }
+    function acertou2() {
+        contador++
+        msg2.innerHTML = 'você acertou'
+        pergunta2.style.display = 'none'
+        resposta2.style.display = 'block'
+        msg2.style.display = 'block'
+        total.innerHTML = `TOTALDEACERTOS ${contador}`
+        e2.style.backgroundColor = 'green'
+    }
+    function errou2() {
+        msg2.innerHTML = 'você errou'
+        pergunta2.style.display = 'none'
+        resposta2.style.display = 'block'
+        msg2.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        r2.style.backgroundColor = 'red'
+        e22.style.backgroundColor = 'red'
+        e222.style.backgroundColor = 'red'
+    }
+    
+    function acertou3() {
+        contador++
+        msg3.innerHTML = 'você acertou'
+        pergunta3.style.display = 'none'
+        resposta3.style.display = 'block'
+        msg3.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e333.style.backgroundColor = 'green'
+    }
+    function errou3() {
+        msg3.innerHTML = 'você errou'
+        pergunta3.style.display = 'none'
+        resposta3.style.display = 'block'
+        msg3.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e3.style.backgroundColor = 'red'
+        e33.style.backgroundColor = 'red'
+        r3.style.backgroundColor = 'red'
+    }
+    function acertou4() {
+        contador++
+        msg4.innerHTML = 'você acertou'
+        pergunta4.style.display = 'none'
+        resposta4.style.display = 'block'
+        msg4.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e4.style.backgroundColor = 'green'
+    }
+    function errou4() {
+        msg4.innerHTML = 'você errou'
+        pergunta4.style.display = 'none'
+        resposta4.style.display = 'block'
+        msg4.style.display = 'block'
+        total.innerHTML = `total de acertos ${contador}`
+        e4.style.backgroundColor = 'red'
+        e44.style.backgroundColor = 'red'
+        r4.style.backgroundColor = 'red'
+    }
+    function acertou5() {
+        contador++
+        msg5.innerHTML = 'você acertou'
+        pergunta5.style.display = 'none'
+        resposta5.style.display = 'block'
+        msg5.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        r5.style.backgroundColor = 'green'
+    }
+    function errou5() {
+        msg5.innerHTML = 'você errou'
+        pergunta5.style.display = 'none'
+        resposta5.style.display = 'block'
+        msg5.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e5.style.backgroundColor = 'red'
+        e55.style.backgroundColor = 'red'
+        e555.style.backgroundColor = 'red'
+    }
+
+    function acertou6() {
+        contador++
+        msg6.innerHTML = 'você acertou'
+        pergunta6.style.display = 'none'
+        resposta6.style.display = 'block'
+        msg6.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e66.style.backgroundColor = 'green'
+    }
+    function errou6() {
+        msg6.innerHTML = 'você errou'
+        pergunta6.style.display = 'none'
+        resposta6.style.display = 'block'
+        msg6.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e6.style.backgroundColor = 'red'
+        r6.style.backgroundColor = 'red'
+        e666.style.backgroundColor = 'red'
+    }
+    function acertou7() {
+        contador++
+        msg7.innerHTML = 'você acertou'
+        pergunta7.style.display = 'none'
+        resposta7.style.display = 'block'
+        msg7.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e7.style.backgroundColor = 'green'
+    }
+    function errou7() {
+        msg6.innerHTML = 'você errou'
+        pergunta7.style.display = 'none'
+        resposta7.style.display = 'block'
+        msg7.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`/10
+        r7.style.backgroundColor = 'red'
+        e77.style.backgroundColor = 'red'
+        e777.style.backgroundColor = 'red'
+    }
+    function acertou8() {
+        contador++
+        msg8.innerHTML = 'você acertou'
+        pergunta8.style.display = 'none'
+        resposta8.style.display = 'block'
+        msg8.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        r8.style.backgroundColor = 'green'
+    }
+    function errou8() {
+        msg8.innerHTML = 'você errou'
+        pergunta8.style.display = 'none'
+        resposta8.style.display = 'block'
+        msg8.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e8.style.backgroundColor = 'red'
+        e88.style.backgroundColor = 'red'
+        e888.style.backgroundColor = 'red'
+    }
+    function acertou9() {
+        contador++
+        msg9.innerHTML = 'você acertou'
+        pergunta9.style.display = 'none'
+        resposta9.style.display = 'block'
+        msg9.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e99.style.backgroundColor = 'green'
+    }
+    function errou9() {
+        msg9.innerHTML = 'você errou'
+        pergunta9.style.display = 'none'
+        resposta9.style.display = 'block'
+        msg9.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e9.style.backgroundColor = 'red'
+        r9.style.backgroundColor = 'red'
+        e999.style.backgroundColor = 'red'
+    }
+    function acertou10() {
+        contador++
+        msg10.innerHTML = 'você acertou'
+        pergunta10.style.display = 'none'
+        resposta10.style.display = 'block'
+        msg10.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        e100.style.backgroundColor = 'green'
+    }
+    function errou10() {
+        msg10.innerHTML = 'você errou'
+        pergunta10.style.display = 'none'
+        resposta10.style.display = 'block'
+        msg10.style.display = 'block'
+        total.innerHTML = `TOTAL DE ACERTOS ${contador}`
+        r10.style.backgroundColor = 'red'
+        e10.style.backgroundColor = 'red'
+        e1000.style.backgroundColor = 'red'
+    }
+</script>
