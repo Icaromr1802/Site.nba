@@ -1,0 +1,92 @@
+   !DOCTYPE html>
+
+<html>
+    <head>
+       <html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jogos.css" />
+    <link rel="icon" href="img/logoNba.png">
+    <title>NBA</title>
+  </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.move').click(function(){
+                    var g = 0;
+                    var r = 400;
+                    var i = 0;
+                    var y = 0;
+                    var t = 0;
+                    var div = document.getElementById("bolt3");
+                    div.innerHTML = '000' + i;
+                    while (g <= 100){
+                        r -= 3;
+                        $('.in, .bolt2').animate({'top':'10%'}, 0, 'linear', function(){
+                            $('.in, .bolt2').css('display', 'block');
+                        });
+                        var d = Math.floor(Math.random() * (74 + 1) + 26);
+                        if(d < 28){
+                            $('.in, .bolt2').animate({'left':'26%'}, 0, 'linear');
+                        }
+                        else if(d < 30){
+                            $('.in, .bolt2').animate({'left':'30%'}, 0, 'linear');
+                        }
+                        else if(d < 35){
+                            $('.in, .bolt2').animate({'left':'36%'}, 0, 'linear');
+                        }
+                        else if(d < 45){
+                            $('.in, .bolt2').animate({'left':'40%'}, 0, 'linear');
+                        }
+                        else if(d < 50){
+                            $('.in, .bolt2').animate({'left':'43%'}, 0, 'linear');
+                        }
+                        else if(d < 55){
+                            $('.in, .bolt2').animate({'left':'48%'}, 0, 'linear');
+                        }
+                        else if(d <= 60){
+                            $('.in, .bolt2').animate({'left':'52%'}, 0, 'linear');
+                        }
+                        else if(d < 65){
+                            $('.in, .bolt2').animate({'left':'60%'}, 0, 'linear');
+                        }
+                        else {
+                            $('.in, .bolt2').animate({'left':'68%'}, 0, 'linear');
+                        }
+                        $('.in, .bolt2').animate({'top':'75%'}, r, 'linear', $('.bolt2').click(function(){
+                            i += 1;
+                            if(i < 10){
+                                div.innerHTML = '000' + i;
+                            }
+                            else if(i < 100){
+                                div.innerHTML = '00' + i;
+                            }
+                            else if(i < 1000){
+                                div.innerHTML = '0' + i;
+                            }
+                            else{
+                                div.innerHTML = i;
+                            }
+                        }));
+                        g += 1;
+                    }
+                });
+                $('.move1').click(function(){
+                    window.location.href = "Jogo_cordova.html";
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <li class='move'><a>PLAY</a></li><br/><br/>
+        <li class='move1'><a>MENU</a></li>
+        <div class='bolt'></div>
+        <div class='bolt1'></div>
+        <div class='bolt2'></div>
+        <div class='bolt3'><p id='bolt3' name='bolt3'></p></div>
+        <img class='in' src='img/logo.png'></img>
+    </body>
+</html>

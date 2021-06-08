@@ -2,23 +2,22 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: url('../img/silver_blur_bg.jpg');
+    font-family: 'Times New Roman', Times, serif;
+    background: url(https://i.pinimg.com/originals/35/f3/04/35f30410dc15e6ffbb48ff14d2233f7a.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
-/* HEADER */
-
 .header {
     padding-top: 9px;
-    background: hsl(20, 14%, 4%, 0.8);
-    width: 100%;
-    height: 73px;
-    border-bottom: 5px solid #1190cb;
-    position: fixed;
-}
+      background: hsl(20, 14%, 4%,0.8);
+      width: 100%;
+      height: 73px;
+      border-bottom: 5px solid  #081dda;
+      position: fixed;
+      padding-bottom: -5px;
+       }
 
 .fundo {
     padding-top: 20px;
@@ -66,12 +65,9 @@ a {
     text-decoration: none;
 }
 
-
-/* Cadastro */
-
 .pag_cadastro {
     height: 100%;
-    padding: 5%;
+    padding-top: 0%;
 }
 
 .cadastro {
@@ -83,23 +79,22 @@ a {
     color: black;
     box-shadow: -0 0 0.5em rgb(134, 134, 134);
     border: 1px solid #fdffff;
+    opacity: 0.8;
 }
 
 .box_cadastro {
+    text-align: center;
     max-width: 90%;
     padding: 5%;
+    opacity: 0.8;
 }
+.titulo{
+    margin-top: -32px;
 
-.box_input {
-    margin: 0 auto;
-    width: 90%;
-    height: 300px;
-    text-align: left;
 }
 
 .input_esq {
-    width: 200px;
-    float: left;
+    width:  453px;
 }
 
 .input_dir {
@@ -107,10 +102,6 @@ a {
     float: right;
 }
 
-.box_input span {
-    margin-top: 25px;
-    float: left;
-}
 
 .box_input input {
     width: 100%;
@@ -118,6 +109,8 @@ a {
     border: white;
     border-bottom: 1px solid black;
     outline: none;
+    margin-top: 25px;
+    float: left;
 }
 
 .box_input input::placeholder {
@@ -161,3 +154,86 @@ a {
 .btn_cadastro:hover {
     background-color: #a2c6d4;
 }
+
+.nome{
+    margin-left: 48px;
+    margin-top: 50px;
+    
+
+}
+
+.time{
+    margin-left: -15px;
+    margin-top: 15px;
+    
+}
+
+.place{
+    margin-left: 5px;
+}
+.places{
+    margin-left: 10px;
+}
+
+.login{
+    margin-left: 28px;
+    margin-top: 15px;
+ 
+}
+.login1{
+    margin-left: 89px;
+}
+
+.email{
+    margin-left: 28px;
+    margin-top: 15px;
+   
+}
+
+.email1{
+    margin-left: 89px;
+}
+.senha{
+    margin-left: 28px;
+    margin-top: 15px;
+  
+}
+
+.senha1{
+    margin-left: 89px;
+}
+.jogador{
+    margin-left: -2px;
+    margin-top: 15px;
+}
+
+.rodape {
+    background-color: hsl(20, 14%, 4%,0.8);
+    color: white;
+    width: 314%;
+    height: 100px;
+    padding-top: 2%;
+    margin-top: 119px;
+  }
+  
+  .box_rodape{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+
+  }
+
+  .copyright{
+    text-align: center;
+    float: left;
+    width: 531px;
+    height: 50px;
+    margin-left: 29.5%;
+    margin-top: 35px;
+    color: aliceblue;
+    margin-left: 313px;
+}
+.email2{
+    margin-top: -27px;
+      margin-left: -962px;
+  }

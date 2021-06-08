@@ -1,0 +1,123 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    background-color: #dfdfe0;
+    
+  }
+
+    .header {padding-top: 9px;
+      background: hsl(20, 14%, 4%,0.8);
+      width: 100%;
+      height: 73px;
+      border-bottom: 5px solid  #081dda;
+      position: fixed;
+      padding-bottom: -5px;
+      
+  }
+  .fundo {
+    padding-top: 0px;
+    background: #353434;
+    width: 100%;
+    height: 100px;
+  }
+
+  .caixa {
+    max-width: 94%;
+    height: 100%;
+    margin: 1px auto; 
+  }
+  
+  .header span {
+    margin-top: 2px;
+    float: left;
+  }
+  
+  .header nav {
+    margin-top: 3px;
+    float: right;
+  }
+  
+  ul {
+    margin-bottom: 5px;
+    list-style: none;
+  }
+  
+  .list_not {
+    font-style: inherit;
+    display: inline;
+    margin-left: 22px;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    color: white;
+  }
+  
+  .list_not:hover {
+  color: #cb1111;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .youtube{
+    margin-top: 108px;
+    margin-left: 53px;
+  }
+  .youtube_legenda{
+    margin-left: 146px ;
+  }
+
+  .rodape {
+    background-color: #303030;
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding-top: 2%;
+    margin-top: 500px;
+  }
+  
+  .box_rodape {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .copyright {
+    text-align: center;
+    float: left;
+    width: 300px;
+    height: 50px;
+    margin-left: 37%;
+    margin-top: 35px;
+  }
+
+  .space{
+    margin-top: 102px;
+    margin-left: 49px;
+  }
+
+  .jam{
+    margin-top: 20px;
+    margin-left: 250px;
+  }
+
+  .uau{
+    margin-left: 176px;
+    margin-top: 60px;
+  }
+  .quiz{
+    margin-left: 796px;
+    margin-top: -774px;
+  }
+  .faca{
+    margin-top: 9px;
+    margin-left: 31px;
+  }
+  .email{
+    margin-top: -27px;
+      margin-left: -962px;
+  }
+  

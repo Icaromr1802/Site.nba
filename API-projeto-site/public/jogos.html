@@ -4,24 +4,226 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="jogos.css" />
-    <link rel="icon" href="logoNba.png">
+    <link rel="stylesheet" href="css/jogos.css" />
+    <link rel="icon" href="img/logoNba.png">
     <title>NBA</title>
   </head>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"
+    integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A=="
+    crossorigin="anonymous"
+    ></script>
 
   <body class="img_fundo"> 
     <div class="header">
       <div class="caixa">
-        <span><a href="home.html"><img style="height: 60px;" src="nba.logo.png" alt="Logo NBA"></a></span>
+        <span><a href="home.html"><img style="height: 60px;" src="img/nba.logo.png" alt="Logo NBA"></a></span>
         <nav>
           <ul>
             <li class="list_not"><a href="index.html">Home</a></li>
-            <li class="list_not" style="color: #eb0d0d;"><a href="jogos.html">Jogos e Resultados</a></li>
+            <li class="list_not" style="color: #eb0d0d;"><a href="jogos.html">Desempenhos</a></li>
             <li class="list_not"><a href="tabela.html">Classificação</a></li>
             <li class="list_not"><a href="login.html">Seus Interesses</a></li>
           </ul>
         </nav>
       </div>
+    </div><br>
+
+    <div class="h1">
+      <img src="img/desempenho.png">
     </div>
+    <div class="direita">
+<button onclick="direita()"><img src="img/direita.jpg" alt="direita" width="20px" height="20px"></button>
+</div>
+<div class="esquerda">
+<button onclick="esquerda()"><img src="img/esquerda.png" alt="esquerda" width="20px" height="20px"></button>
+</div>
+
+
+    <div id="desempenho" style="display: block;"> 
+    <div class="grafico" style="width: 50%; height: 100px" >
+      <div class="porcentagem">Porcentagem no campeonato</div>
+    <canvas id="des"></canvas>
+  </div>
+  </div>
+
+    <div id="pontos" style="display: none;">
+    <div class="grafico" style="width: 50%; height: 100px" >
+      <div class="porcentagem">Pontos por Jogo</div>
+    <canvas id="pon"></canvas>
+  </div>
+  </div>
+
+   
+   
+   <script>
+     function direita(){
+       pontos.style.display="block"
+       desempenho.style.display="none"
+     }
+   
+     function esquerda(){
+       desempenho.style.display="block"
+       pontos.style.display="none"
+     }
+   
+   var ctx = des.getContext("2d");
+  
+ 
+   var config = {
+       type: "bar", 
+       data: {
+           labels: ["", "Nets", "76ers", "Utah", "Heat", "Lakers", "Clippers",  "Raptors", "Nuggets", "Bucks", "Trail Blazers",
+        "Suns", "Warriors", "Magic", "Mavericks", "Pacers", "Celtics",], 
+           datasets: [
+           {
+               label: "cor do time", 
+               data: [0, 86, 80, 78, 76, 74, 73, 75, 74, 73, 70, 67, 68, 65, 66, 62, 70 ], 
+               backgroundColor: [
+               '',
+               'black',
+               'blue',
+               'blue',
+               'red',
+               'yellow',
+               'blue',
+               'red',
+               'blue',
+               'green',
+               'red',
+               'purple',
+               'yellow',
+               'blue',
+               'blue',
+               'yellow',
+               'green',
+
+                
+               ],
+               borderColor: [
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               "rgb(0, 0, 0)",
+               ],
+               borderWidth: 1,
+           },
+           ],
+       },
+       options: {
+            scales: {
+                y: {
+                    beginAtZero: true, 
+                },
+            },
+        },
+    };
+    
+   new Chart(ctx, config); 
+  
+  
+   
+  </script>
+ <script>
+
+   var ctx = pon.getContext("2d");
+
+  var config = {
+      type: "bar", 
+      data: {
+          labels: ["", "Nets", "76ers", "Utah", "Heat", "Lakers", "Clippers",  "Raptors", "Nuggets", "Bucks", "Trail Blazers",
+       "Suns", "Warriors", "Magic", "Mavericks", "Pacers", "Celtics",], 
+          datasets: [
+          {
+              label: "cor do time", 
+              data: [0, 117, 121, 103, 107, 105, 119, 100, 113, 98, 110, 124, 102, 93, 106, 102, 119 ], 
+              backgroundColor: [
+              '',
+              'black',
+              'blue',
+              'blue',
+              'red',
+              'yellow',
+              'blue',
+              'red',
+              'blue',
+              'green',
+              'red',
+              'purple',
+              'yellow',
+              'blue',
+              'blue',
+              'yellow',
+              'green',
+
+               
+              ],
+              borderColor: [
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              "rgb(0, 0, 0)",
+              ],
+              borderWidth: 1,
+          },
+          ],
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true, 
+              },
+          },
+      },
+  };
+  
+  new Chart(ctx, config);
+  </script>
+
+
+
+
+   
+
+<footer class="rodape">
+  <div class="box_rodape">
+    <div class="copyright">
+      <div class="email"><b>Suporte para contato:</b><br>
+        <b>Telefone:</b> (11)99008-4936<br>
+        <b>E-mail:</b> pagnba.19@gmail.com<br>
+        <b>Disponivel 24 horas para reclamações e ajudas!</b>
+      </div>
+  <span>NBA - Copyright © 2021</span>
+    </div>
+  </div>
+</footer>
+  </body>
+
 
 

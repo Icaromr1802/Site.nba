@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/grafico.css" />
+    <link rel="icon" href="img/logoNba.png">
+    <title>NBA</title>
+  </head>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"
+    integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A=="
+    crossorigin="anonymous"
+    ></script>
+    <title>Titulos Nba</title>
+  <body class="img_fundo"> 
+    <div class="header">
+      <div class="caixa">
+        <span><a href="home.html"><img style="height: 60px;" src="img/nba.logo.png" alt="Logo NBA"></a></span>
+        <nav>
+          <ul>
+            <li class="list_not"><a href="usuario.html">Sua Area</a></li>
+            <li class="list_not"><a href="quiz.html">Quiz</a></li>
+            <li class="list_not" style="color: #eb0d0d;"><a href="grafico.html">Grafico de Titulos</a></li>
+            <li class="list_not"><a href= "login.html">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><br>
+</head>
+<body>
+
+  <div class="h1">
+    <img src="img/titulos.png">
+  </div>
+    
+  
+  <div class="grafico" style="width: 50%; height: 100px">
+        <canvas id="nba"></canvas>
+    </div>
+</div>
+<footer class="rodape">
+  <div class="box_rodape">
+    <div class="copyright">
+      <div class="email"><b>Suporte para contato:</b><br>
+        <b>Telefone:</b> (11)99008-4936<br>
+        <b>E-mail:</b> pagnba.19@gmail.com<br>
+        <b>Disponivel 24 horas para reclamações e ajudas!</b>
+      </div>
+  <span>NBA - Copyright © 2021</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+<script>
+   
+    var ctx = nba.getContext("2d");
+    
+  
+    var config = {
+        type: "bar", 
+        data: {
+            labels: ["", "Lakers", "Celtics", "Warriors", "Bulls", "Spurs", "Heat", "76ers", "Rockets", "Knicks",
+        "Cavaliers","Raptors","Mavericks","Kings","Trail Blazers","Wizards","Bucks","Hawnks"], 
+            datasets: [
+            {
+                label: "Titulos nba", 
+                data: [0, 17, 17, 6, 6, 5, 3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1 ], 
+                backgroundColor: [
+                "rgb(0, 0, 255)",
+                "rgb(255, 242, 0)",
+                "rgb(60, 179, 113)",
+                "rgb(30, 144, 255)",
+                "rgb(255, 0, 0)",
+                "rgb(105, 105, 105)",
+                "rgba(178, 34, 34)",
+                "rgb(0, 0, 205)", 
+                "rgb(255, 0, 0)", 
+                "rgb(255, 69, 0)", 
+                "rgb(165, 42, 42)", 
+                "rgb(255, 0, 0)", 
+                "rgba(0, 0, 128)", 
+                "rgb(148, 0, 211)",
+                "rgb(255, 0, 0)", 
+                "rgb(0, 0, 205)", 
+                "rgb(0, 128, 0)", 
+                "rgb(178, 34, 34)", 
+                ],
+                borderColor: [
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                "rgb(0, 0, 0)",
+                ],
+                borderWidth: 1,
+            },
+            ],
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true, 
+                },
+            },
+        },
+    };
+    
+    new Chart(ctx, config); 
+
+</script>

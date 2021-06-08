@@ -12,11 +12,11 @@
     <body class="img_fundo"> 
         <div class="header">
           <div class="caixa">
-            <span><a href="home.html"><img style="height: 60px;" src="nba.logo.png" alt="Logo Champions"></a></span>
+            <span><a href="home.html"><img style="height: 60px;" src="img/nba.logo.png" alt="Logo Champions"></a></span>
             <nav>
               <ul>
                 <li class="list_not"><a href="index.html">Home</a></li>
-                <li class="list_not"><a href="jogos.html">Jogos e Resultados</a></li>
+                <li class="list_not"><a href="jogos.html">Desempenhos</a></li>
                 <li class="list_not"><a href="tabela.html">Classificação</a></li>
                 <li class="list_not" style="color: #eb0d0d;"><a href="login.html">Seus Interesses</a></li>
               </ul>
@@ -24,19 +24,17 @@
           </div>
         </div>
         <Br><Br><br><br><br><br><br>
-          <div class="pag_cadastro">
-  <div class="cadastro">
-    <div class="box_cadastro">   
-      <h2>Faça seu cadastro aqui!</h2>
-                <div class="box_input">
+          <div class="cadastro">
+        <div class="box_cadastro"></div>
+      <h2 class="titulo">Faça seu cadastro aqui!</h2>      
         <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-          <div class="input_esq">
-          Nome completo
-            <input type="text" name="nome_completo" class="input-padrao" autofocus="autofocus" placeholder="Nome e sobrenome" required minlength="4"><br>
-           
+          <div class="nome"> Nome completo:
+            <input class="place" type="text" name="nome_completo" class="input-padrao" autofocus="autofocus" placeholder="Nome e sobrenome" required minlength="4"><br>
+            </div>
+            <div class="time">
             <span>Time Favorito:
-              <select id="time" name="fk_times" required>
-                <option  disabled selected ></option>
+              <select  class="places" id="time" name="fk_times" required>
+                <option disabled selected ></option>
                 <option value="01">76ers</option>
                 <option value="02">Bucks</option>
                 <option value="03">Bulls</option>
@@ -68,9 +66,10 @@
                 <option value="29">warriors</option>
                 <option value="30">Wizards</option>
               </select></span><br>
+            </div>
 
 
-              <span>Jogador Favorito:<select id="time" name="fk_jogador" required>
+              <span class="jogador">Jogador Favorito: <select id="time" name="fk_jogador" required>
                 <option  disabled selected ></option>
                 <option value="101">Lebron</option>
                 <option value="102">Bird</option>
@@ -92,34 +91,45 @@
                 <option value="118">Karl Malone</option>
                 <option value="119">Carmelo Anthony</option>
                 <option value="120">Barkley</option><br>
+              </span></select><br>
                   
-                <div class="input_dir">
-           
-            Login:<br>
-            <input type="text" name="login" class="input-padrao" placeholder="seu nome de usuário" required minlength="4"><br>
-
-            E-mail:<br>
-            <input type="text" name="email" class="input-padrao" placeholder="seu E-mail" required minlength="4">
-            
-            Senha:<br>
-            <input type="password" name="senha" class="input-padrao" placeholder="*****" required minlength="4">
-            
-            <input type="submit" id="btn_entrar" value="Cadastrar" class="btn_cadastro">
+            <div class="login1">
+            Login:
+            <input  class="login" type="text" name="login" class="input-padrao" placeholder="seu nome de usuário" required minlength="4"><br>
+          </div>   
+          <div class="email1">
+            E-mail:
+            <input  class="email" type="text" name="email" class="input-padrao" placeholder="seu E-mail" required minlength="4"><br>
+          </div>
+          <div class="senha1">
+            Senha:
+            <input  class="senha" type="password" name="senha" class="input-padrao" placeholder="*****" required minlength="4"><br>
+          </div>
+            <input  type="submit" id="btn_entrar" value="Cadastrar" class="btn_cadastro">
         </form>
         
-      </div>
-    </div>
-    
+  
 
         <img src="aguarde-orange.gif" id="img_aguarde" style="display: none; width:100px">
 
             <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
             Erro no cadastro
             </div>
-    </div>
-    </div>
-   </div>
-   </div>
+          </div>
+        </div>
+        <footer class="rodape">
+          <div class="box_rodape">
+            <div class="copyright">
+              <div class="email2"><b>Suporte para contato:</b><br>
+                <b>Telefone:</b> (11)99008-4936<br>
+                <b>E-mail:</b> pagnba.19@gmail.com<br>
+                <b>Disponivel 24 horas para reclamações e ajudas!</b>
+              </div>
+          <span>NBA - Copyright © 2021</span>
+            </div>
+          </div>
+        </footer>
+  
     
 </body>
 </html>

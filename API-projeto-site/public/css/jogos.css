@@ -1,0 +1,168 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    background-color: #dfdfe0;
+  }
+
+    .header {padding-top: 9px;
+      background: hsl(20, 14%, 4%,0.8);
+      width: 100%;
+      height: 73px;
+      border-bottom: 5px solid  #081dda;
+      position: fixed;
+      padding-bottom: -5px;
+      
+  }
+  .fundo {
+    padding-top: 0px;
+    background: #353434;
+    width: 100%;
+    height: 100px;
+  }
+
+  .caixa {
+    max-width: 94%;
+    height: 100%;
+    margin: 1px auto; 
+  }
+  
+  .header span {
+    margin-top: 2px;
+    float: left;
+  }
+  
+  .header nav {
+    margin-top: 3px;
+    float: right;
+  }
+  
+  ul {
+    margin-bottom: 5px;
+    list-style: none;
+  }
+  
+  .list_not {
+    font-style: inherit;
+    display: inline;
+    margin-left: 22px;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    color: white;
+  }
+  
+  .list_not:hover {
+  color: #cb1111;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .grafico{
+    display: block;
+    box-sizing: border-box;
+    height: 380px;
+    width: 0px;
+    margin-top: -195px;
+    margin-left: 350px;
+    text-align: center;
+  }
+  .h1{
+    margin-top: -83px;
+    margin-left: 423px;
+  }
+ .direita{
+  margin-top: 45px;
+    margin-left: 1090px;
+ }
+
+ .esquerda{
+  margin-top: -30px;
+  margin-left: 239px;
+ }
+
+ .porcentagem{
+  margin-top: -4px;
+    margin-left: -3px;
+ }
+ .email{
+  margin-top: -27px;
+    margin-left: -962px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .rodape {
+    background-color: hsl(20, 14%, 4%,0.8);
+    color: white;
+    width: 314%;
+    height: 100px;
+    padding-top: 2%;
+    margin-top: 372px;
+  }
+  
+  .box_rodape{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+
+  }
+
+  .copyright{
+    text-align: center;
+    float: left;
+    width: 531px;
+    height: 50px;
+    margin-left: 29.5%;
+    margin-top: 35px;
+    color: aliceblue;
+    margin-left: 313px;
+}
+ 
